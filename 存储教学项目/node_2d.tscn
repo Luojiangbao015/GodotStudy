@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7lyf0h5k4k2y"]
+
+[ext_resource type="Script" path="res://存储脚本.gd" id="1_bob76"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_bob76")
+
+[node name="存储" type="Button" parent="."]
+offset_left = 350.0
+offset_top = 227.0
+offset_right = 546.0
+offset_bottom = 349.0
+text = "存储"
+
+[node name="获取" type="Button" parent="."]
+offset_left = 683.0
+offset_top = 230.0
+offset_right = 901.0
+offset_bottom = 358.0
+text = "获取"
+
+[node name="修改" type="Button" parent="."]
+offset_left = 567.0
+offset_top = 435.0
+offset_right = 725.0
+offset_bottom = 558.0
+text = "书生命值-10"
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[connection signal="button_down" from="存储" to="." method="_on_存储_button_down"]
+[connection signal="button_down" from="获取" to="." method="_on_获取_button_down"]
+[connection signal="button_down" from="修改" to="." method="_on_修改_button_down"]
